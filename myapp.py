@@ -14,6 +14,7 @@ def whereami():
 @app.route('/hello/<name>')
 def foo(name):
 	return render_template('index.html', to=name)
+
 @app.route('/linux')
 def mylinux():
 	return render_template('linux.html')
